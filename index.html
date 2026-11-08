@@ -1,21 +1,58 @@
-<!DOCTYPE html><html lang="zh-HK"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>我係點砌一個會自己搵我嘅 AI 助理（Claw）</title>
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Claw — 我點砌一個會自己搵我嘅 AI 助理</title>
 <style>
-body{margin:0;background:#F3EFE6;color:#15130F;font-family:'PingFang HK','Hiragino Sans GB',sans-serif;line-height:1.6}
-.wrap{max-width:720px;margin:0 auto;padding:64px 24px 72px}
-.k{font-family:Menlo,monospace;font-size:12px;letter-spacing:3px;color:#5C564B}
-h1{font-family:'Songti TC','Songti SC',serif;font-size:38px;line-height:1.25;margin:10px 0 14px}
-.rule{height:2px;background:#15130F;margin:0 0 20px}
-p{font-size:17px}
-.btn{display:inline-block;background:#15130F;color:#F3EFE6;text-decoration:none;padding:14px 22px;font-size:16px;margin:14px 8px 0 0}
-.btn.acc{background:#C8382A}
-.small{font-size:13px;color:#5C564B;margin-top:36px;border-top:2px solid #15130F;padding-top:12px}
-</style></head><body><div class="wrap">
-<div class="k">CLAW / AI 助理實戰筆記</div>
-<h1>我係點砌一個<br>會自己搵我嘅 AI 助理</h1>
-<div class="rule"></div>
-<p>大部分 AI 助理，大部分時間乜都唔講。但佢一開口就係重點 —— 例如話你知個 project 停咗好耐冇人理。呢份係我嘅砌法，拆開俾你睇。</p>
-<a class="btn" href="claw_guide.pdf">下載 PDF（一頁指南）</a>
-<span class="btn acc" style="cursor:default">留言「Claw」我逐步拆俾你睇</span>
-<div class="small">ai.__.life · 內容係我自己嘅做法，數字係實測返嚟嘅。</div>
-</div></body></html>
+  *{box-sizing:border-box}
+  body{margin:0;background:#F3EFE6;color:#15130F;font-family:'PingFang HK','Hiragino Sans GB',sans-serif;line-height:1.62}
+  .wrap{max-width:760px;margin:0 auto;padding:72px 26px 90px}
+  .k{font-family:Menlo,monospace;font-size:12px;letter-spacing:3px;color:#5C564B}
+  h1{font-family:'Songti TC','Songti SC',serif;font-size:clamp(32px,6vw,52px);line-height:1.18;margin:12px 0 18px}
+  .rule{height:2px;background:#15130F;margin:0 0 26px}
+  p{font-size:17px;margin:0 0 16px}
+  .lead{font-size:19px}
+  .cards{margin:34px 0 0}
+  .card{display:block;text-decoration:none;color:inherit;border:2px solid #15130F;padding:18px 20px;margin:0 0 16px;background:#fff}
+  .card:hover{background:#15130F;color:#F3EFE6}
+  .card:hover .t{color:#F3EFE6}
+  .card .t{font-family:'Songti TC',serif;font-size:23px;margin:0 0 4px;color:#15130F}
+  .card .d{font-size:14.5px;color:#5C564B;margin:0}
+  .card:hover .d{color:#CFC8B8}
+  .cta{margin-top:34px;border:2px solid #15130F;padding:20px 22px;background:#FBF8F2}
+  .cta b{font-family:'Songti TC',serif;font-size:21px}
+  footer{margin-top:46px;border-top:2px solid #15130F;padding-top:14px;font-size:13px;color:#5C564B}
+  .mono{font-family:Menlo,monospace}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="k">CLAW / AI 助理實戰筆記</div>
+  <h1>我係點砌一個<br>會自己搵我嘅 AI 助理</h1>
+  <div class="rule"></div>
+
+  <p class="lead">大部分 AI 助理，大部分時間乜都唔講。但佢一開口就係重點 —— 例如話你知個 project 停咗好耐冇人理。</p>
+
+  <div class="cards">
+    <a class="card" href="claw_setup.pdf">
+      <p class="t">系統搭建指南（8 頁）</p>
+      <p class="d">完整架構、每一步點做、每個位踩過咩坑：Gateway、profile 切分、33 個排程、one-shot 調用、Obsidian 知識庫、自己把聲、維運 checklist。</p>
+    </a>
+    <a class="card" href="claw_guide.pdf">
+      <p class="t">一頁速覽（2 頁）</p>
+      <p class="d">零件表 + 三步砌法 + 起步版。想知點解要做，睇呢兩頁就夠。</p>
+    </a>
+  </div>
+
+  <div class="cta">
+    <b>想我逐步拆俾你睇？</b>
+    <p style="margin:8px 0 0">呢個 post 下面留言「Claw」，或者直接覆我個 comment，話我知你想管邊類嘢 —— 我按你嘅情況改一版。</p>
+  </div>
+
+  <footer>
+    <span class="mono">ai.__.life</span> · 內容係我自己嘅做法，數字係實測返嚟嘅。
+  </footer>
+</div>
+</body>
+</html>
